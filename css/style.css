@@ -66,10 +66,13 @@
     scroll-behavior: smooth;
   }
   body {
+    width: 100%;
+    position: relative;
     overflow: hidden;
     font-family: var(--body-font);
   }
   .container {
+    position: relative;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -141,7 +144,7 @@
   /*========== Start Header ==========*/
   .header {
     height: calc(var(--header-height) + 1rem);
-    padding-left: 3rem;
+    padding-left: 1rem;
     padding-right: 3rem;
     display: flex;
     align-items: center;
@@ -255,7 +258,7 @@
 /*========== End Header ==========*/
 /*========== Start Landing Section ==========*/
 .landing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255,52,110, 0.6)), url(../images/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255,52,110, 0.6)), url(../images/back.jpg);
     width: 100%;
     background-size: cover;
     height: calc(100vh - 64px);
