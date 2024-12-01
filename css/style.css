@@ -66,6 +66,7 @@
     scroll-behavior: smooth;
   }
   body {
+    overflow: hidden;
     font-family: var(--body-font);
   }
   .container {
@@ -546,29 +547,6 @@
   width: 400px;
 }
 
-/* @media (max-width: 500px) {
-  .about .about-content .image::after {
-    left: 60px;
-  }
-}
-@media (max-width: 900px) {
-  .about .about-content .image::before {
-    width: 50px;
-    height: calc(100% + 40px);
-    top: -20px;
-    left: 20px;
-  }
-  .about .about-content .image::after {
-    width: 60px;
-    height: 300px;
-    border-left: 40px solid var(--main-color);
-    border-bottom: 40px solid var(--main-color);
-    right: -20px;
-  }
-  .about .about-content .image img {
-    width: 300px;
-  }
-} */
 .about .about-content .text {
   width: 100%;
   text-align: center;
@@ -639,8 +617,10 @@ form {
   background-color: #ebeced;
   text-align: left;
 }
-@media (max-width: 900px) {
-  
+@media (max-width: 500px) {
+  form {
+  width: 350px;
+}
 }
 form .input {
   padding: 1.25rem;
@@ -662,16 +642,10 @@ form button {
     font-size: 25px;
   }
 }
-@media (max-width: 1200px) {
-
-}
-
 @media screen and (max-width: 576px) {
   form {
     width: 400px;
   }
-}
-@media screen and (min-width: 767px) {
 }
 @media screen and (min-width: 1000px) {
   .contact .info {
@@ -786,6 +760,20 @@ form button {
   color: var(--main-color);
 }
 /*========== End Footer ==========*/
+@media screen and (min-width: 450px) {
+  .footer .logo {
+  width: 300px;
+  }
+  .footer .info .item {
+  width: 300px;
+}
+   .footer1 ul {
+    gap: 1rem;
+  }
+  .footer1 ul li a {
+    font-size: var(--small-font-size);
+  }
+}
 /* Medium */
 @media screen and (min-width: 850px) {
   .footer .contain {
